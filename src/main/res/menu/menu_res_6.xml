@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_3"
+        android:icon="@drawable/ic_settings"
+        android:orderInCategory="3"
+        android:title="Item 3" />
+    <item
+        android:id="@+id/item_2"
+        android:orderInCategory="2"
+        android:title="Item 2" />
+    <item
+        android:id="@+id/item_disabled"
+        android:enabled="false"
+        android:orderInCategory="4"
+        android:title="Disabled" />
+    <item
+        android:id="@+id/submenu"
+        android:orderInCategory="3"
+        android:title="A Submenu">
+        <menu>
+            <item
+                android:id="@+id/sub_1"
+                android:alphabeticShortcut="n"
+                android:title="Sub Item 1"
+                android:visible="true" />
+            <item
+                android:id="@+id/sub_2"
+                android:alphabeticShortcut="g"
+                android:title="Sub Item 2"
+                android:visible="false" />
+        </menu>
+    </item>
+    <group
+        android:id="@+id/group"
+        android:menuCategory="secondary"
+        android:visible="true">
+        <item
+            android:id="@+id/group_item_1"
+            android:orderInCategory="0"
+            android:title="Group Item 1" />
+        <item
+            android:id="@+id/group_item_2"
+            android:orderInCategory="1"
+            android:title="Group Item 2" />
+    </group>
+</menu>

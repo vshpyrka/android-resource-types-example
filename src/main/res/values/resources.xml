@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="resource_type_boolean">true</bool>
+
+    <color name="resource_type_color">#ff0</color>
+
+    <dimen name="resource_type_dimen">40dp</dimen>
+
+    <item name="resource_type_id" type="id" />
+
+    <integer name="resource_type_integer">100</integer>
+
+    <integer-array name="resource_type_integer_array">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+    </integer-array>
+
+    <array name="resource_type_typed_array">
+        <item>@drawable/ic_settings</item>
+        <item>@drawable/ic_search</item>
+        <item>#FFFF0000</item>
+        <item>#FF00FF00</item>
+        <item>#FF0000FF</item>
+    </array>
+
+</resources>

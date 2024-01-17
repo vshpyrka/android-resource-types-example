@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- android:supportsRtl - Declares whether your application is willing to support right-to-left (RTL) layouts. -->
+
+    <application
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+
+        <activity
+            android:name="com.example.resources.ComplexXMLResourceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.ConfigurationChangeActivity"
+            android:configChanges="orientation|screenLayout|screenSize|keyboardHidden"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.InternationalizationResourceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.DrawableLocalizedResourceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.RTLResourceActivity"
+            android:exported="false" />
+
+
+        <activity
+            android:name="com.example.resources.types.ResourceTypeAnimActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.types.ResourceTypeColorStateListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.types.ResourceTypeDrawableActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.types.ResourceTypeMenuActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.types.ResourceTypeFontActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.types.ResourceTypeMoreActivity"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.resources.types.ResourceTypeStringActivity"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

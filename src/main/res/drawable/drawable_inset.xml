@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<inset xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:inset="20dp">-->
+<!--    <layer-list android:paddingMode="stack">-->
+<!--        <item>-->
+<!--            <ripple android:color="?attr/colorControlHighlight">-->
+<!--                <item>-->
+<!--                    <shape-->
+<!--                        android:shape="rectangle"-->
+<!--                        android:tint="?attr/colorButtonNormal">-->
+<!--                        <corners-->
+<!--                            android:topLeftRadius="2dp"-->
+<!--                            android:topRightRadius="2dp" />-->
+<!--                        <solid android:color="#fff" />-->
+<!--                        <padding-->
+<!--                            android:bottom="4dp"-->
+<!--                            android:left="8dp"-->
+<!--                            android:right="8dp"-->
+<!--                            android:top="4dp" />-->
+<!--                    </shape>-->
+<!--                </item>-->
+<!--            </ripple>-->
+<!--        </item>-->
+<!--        <item android:gravity="bottom|fill_horizontal">-->
+<!--            <shape android:shape="rectangle">-->
+<!--                <size android:height="2dp" />-->
+<!--                <solid android:color="#f00" />-->
+<!--            </shape>-->
+<!--        </item>-->
+<!--    </layer-list>-->
+<!--</inset>-->
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <stroke
+                android:width="2dp"
+                android:color="#999" />
+
+            <gradient
+                android:centerY="0.0"
+                android:endColor="#BBB"
+                android:gradientRadius="500"
+                android:startColor="#DDD"
+                android:type="radial"/>
+        </shape>
+    </item>
+
+    <item>
+        <inset
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="-3dp"
+            android:insetBottom="-3dp">
+            <shape>
+                <stroke
+                    android:width="2dp"
+                    android:color="#DDD" />
+
+                <solid android:color="@android:color/transparent" />
+            </shape>
+        </inset>
+    </item>
+
+</layer-list>

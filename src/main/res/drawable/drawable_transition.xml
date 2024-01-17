@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <bitmap
+            android:src="@drawable/ic_lockscreen_google_normal"
+            android:tint="#282" />
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/ic_lockscreen_google_focused"
+            android:tint="#282" />
+    </item>
+</transition>

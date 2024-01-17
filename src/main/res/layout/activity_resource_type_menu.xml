@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.resources.types.ResourceTypeMenuActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/condensed_title"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:title="Condensed Title" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/show_as_action"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        app:title="ShowAsAction" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/search_icon"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        app:title="Search Icon" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/alphabetic"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        app:title="Alphabetic" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/groups"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        app:title="Groups" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/checkable"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        app:title="Checkable" />
+
+
+</LinearLayout>

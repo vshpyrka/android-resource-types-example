@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Example of string alias reference -->
+    <string name="text_original" translatable="false">Original Text</string>
+    <string name="text_original_alias" translatable="false">@string/text_original</string>
+
+    <string name="html_markup" translatable="false">Hello &lt;b>World&lt;/b>.! &lt;big> Hello &lt;big></string>
+    <string name="html_markup2" translatable="false">Hello, %1$s! You have &lt;b>%2$d new messages&lt;/b>.</string>
+    <string name="html_markup3" translatable="false">Hello, %1$s! You have &lt;b>%2$d new messages&lt;/b>.</string>
+
+    <string name="annotation_string" translatable="false">Best practices for <annotation font="title_emphasis">text</annotation> on Android</string>
+</resources>
