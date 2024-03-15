@@ -57,4 +57,7 @@ dependencies {
     androidTestImplementation(testLibs.espresso.device)
     androidTestImplementation(testLibs.uiautomator)
     androidTestImplementation(testLibs.truth)
+
+    implementation("com.google.guava:guava:32.0.1-jre")
+    implementation("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
 }
