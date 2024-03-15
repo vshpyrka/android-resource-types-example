@@ -3,12 +3,16 @@ package com.example.resources
 import android.content.res.Configuration
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.snackbar.Snackbar
+import com.example.resources.databinding.ActivityConfigurationChangeBinding
 
 class ConfigurationChangeActivity : AppCompatActivity() {
+    
+    private lateinit var binding: ActivityConfigurationChangeBinding
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_configuration_change)
+        binding = ActivityConfigurationChangeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
@@ -16,19 +20,19 @@ class ConfigurationChangeActivity : AppCompatActivity() {
         // Checks the orientation of the screen
         when {
             newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE -> {
-                Snackbar.make(window.decorView, "landscape", Snackbar.LENGTH_SHORT).show()
+                binding.text.text = "landscape"
             }
             newConfig.orientation == Configuration.ORIENTATION_PORTRAIT -> {
-                Snackbar.make(window.decorView, "portrait", Snackbar.LENGTH_SHORT).show()
+                binding.text.text = "portrait"
             }
             newConfig.keyboardHidden == Configuration.KEYBOARD_UNDEFINED -> {
-                Snackbar.make(window.decorView, "keyboard undefined", Snackbar.LENGTH_SHORT).show()
+                binding.text.text = "keyboard undefined"
             }
             newConfig.keyboardHidden == Configuration.KEYBOARDHIDDEN_NO -> {
-                Snackbar.make(window.decorView, "keyboard No", Snackbar.LENGTH_SHORT).show()
+                binding.text.text = "keyboard No"
             }
             newConfig.keyboardHidden == Configuration.KEYBOARDHIDDEN_YES -> {
-                Snackbar.make(window.decorView, "keyboard Yes", Snackbar.LENGTH_SHORT).show()
+                binding.text.text = "keyboard Yes"
             }
         }
     }

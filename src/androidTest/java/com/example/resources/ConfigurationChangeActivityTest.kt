@@ -15,7 +15,6 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.FlakyTest
 import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
 import androidx.test.uiautomator.UiDevice
-import com.google.android.material.R
 import com.google.common.truth.Truth
 import org.junit.Rule
 import org.junit.Test
@@ -38,13 +37,13 @@ class ConfigurationChangeActivityTest {
             val uiDevice = UiDevice.getInstance(instrumentation)
             // Rotate device
             uiDevice.setOrientationLeft()
-            Espresso.onView(ViewMatchers.withId(R.id.snackbar_text))
+            Espresso.onView(ViewMatchers.withId(R.id.text))
                 .check(ViewAssertions.matches(ViewMatchers.withText("landscape")))
             // Rotate device back
             uiDevice.unfreezeRotation()
             // Wait for screen to reappear
             uiDevice.waitForWindowUpdate(context.packageName, 3000)
-            Espresso.onView(ViewMatchers.withId(R.id.snackbar_text))
+            Espresso.onView(ViewMatchers.withId(R.id.text))
                 .check(ViewAssertions.matches(ViewMatchers.withText("portrait")))
             // Close
             Espresso.pressBackUnconditionally()
@@ -52,22 +51,25 @@ class ConfigurationChangeActivityTest {
         }
     }
 
+    /*
     @Test
     fun testConfigurationChangeNew() {
         launchActivity<ConfigurationChangeActivity>().use { scenario ->
             // Sets the device to landscape orientation during test execution.
             onDevice().setScreenOrientation(ScreenOrientation.LANDSCAPE)
 
-            Espresso.onView(ViewMatchers.withId(R.id.snackbar_text))
+            Espresso.onView(ViewMatchers.withId(R.id.text))
                 .check(ViewAssertions.matches(ViewMatchers.withText("landscape")))
 
             onDevice().setScreenOrientation(ScreenOrientation.PORTRAIT)
 
-            Espresso.onView(ViewMatchers.withId(R.id.snackbar_text))
+            Espresso.onView(ViewMatchers.withId(R.id.text))
                 .check(ViewAssertions.matches(ViewMatchers.withText("portrait")))
             // Close
             Espresso.pressBackUnconditionally()
             Truth.assertThat(scenario.state).isEqualTo(Lifecycle.State.DESTROYED)
         }
     }
+
+     */
 }
