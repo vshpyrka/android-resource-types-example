@@ -6,8 +6,6 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.core.app.launchActivity
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions
-import androidx.test.espresso.device.DeviceInteraction.Companion.setScreenOrientation
-import androidx.test.espresso.device.EspressoDevice.Companion.onDevice
 import androidx.test.espresso.device.action.ScreenOrientation
 import androidx.test.espresso.device.rules.ScreenOrientationRule
 import androidx.test.espresso.matcher.ViewMatchers
@@ -16,10 +14,17 @@ import androidx.test.filters.FlakyTest
 import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
 import androidx.test.uiautomator.UiDevice
 import com.google.common.truth.Truth
+import org.junit.Ignore
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
+@Ignore("Disabled to run on CI." +
+        "androidx.test.espresso.device.controller.DeviceControllerOperationException: " +
+        "Unable to connect to Emulator gRPC port. Please make sure the Android Emulator " +
+        "version is updated to 33.1.11+ and the controller gRPC service is enabled on the emulator. " +
+        "See https://developer.android.com/studio/test/espresso-api#set_up_your_project_for_the_espresso_device_api " +
+        "for setup instructions.\n")
 @RunWith(AndroidJUnit4::class)
 class ConfigurationChangeActivityTest {
 
